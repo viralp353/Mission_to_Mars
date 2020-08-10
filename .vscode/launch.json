@@ -28,5 +28,22 @@
             ],
             "jinja": true
         },
+        {
+            "name": "Flask1",
+            "type": "python",
+            "request": "launch",
+            "module" : "flask",
+            "env" :{
+                "FLASK_APP" : "${class}/Mission_to_Mars/app1.py",
+                "FLASK_ENV": "development",
+                "FLASK_DEBUG": "0"
+            },
+            "args" : [
+                "run",
+                "--no-debugger",
+                "--no-reload"
+            ],
+            "jinja": true
+        },
     ]
 }
